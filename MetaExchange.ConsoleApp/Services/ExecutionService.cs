@@ -8,7 +8,7 @@ namespace MetaExchange.ConsoleApp.Services
 {
     public class ExecutionService : IExecutionService
     {
-        public async Task<ExecutionPlan> GetBestExecutionPlanAsync(List<Exchange> exchanges, string orderType, double amount)
+        public async Task<ExecutionPlan> GetBestExecutionPlanAsync(List<Exchange> exchanges, string orderType, decimal amount)
         {
             if (string.IsNullOrWhiteSpace(orderType))
                 throw new ArgumentException("Order type must be specified.", nameof(orderType));
@@ -28,7 +28,7 @@ namespace MetaExchange.ConsoleApp.Services
                     .OrderBy(o => o.Price)
                     .ToList();
 
-                double remainingAmount = amount;
+                decimal remainingAmount = amount;
 
                 foreach (var ask in allAsks)
                 {
@@ -41,9 +41,9 @@ namespace MetaExchange.ConsoleApp.Services
                     if (exchange == null)
                         continue;
 
-                    // Check EUR balance
-                    double maxAffordableAmount = exchange.AvailableFunds.Euro / ask.Price;
-                    double purchasableAmount = Math.Min(ask.Amount, Math.Min(remainingAmount, maxAffordableAmount));
+					// Check EUR balance
+					decimal maxAffordableAmount = exchange.AvailableFunds.Euro / ask.Price;
+					decimal purchasableAmount = Math.Min(ask.Amount, Math.Min(remainingAmount, maxAffordableAmount));
 
                     if (purchasableAmount <= 0)
                         continue;
@@ -77,7 +77,7 @@ namespace MetaExchange.ConsoleApp.Services
                     .OrderByDescending(o => o.Price)
                     .ToList();
 
-                double remainingAmount = amount;
+                decimal remainingAmount = amount;
 
                 foreach (var bid in allBids)
                 {
@@ -90,9 +90,9 @@ namespace MetaExchange.ConsoleApp.Services
                     if (exchange == null)
                         continue;
 
-                    // Check BTC balance
-                    double availableBtc = exchange.AvailableFunds.Crypto;
-                    double sellableAmount = Math.Min(bid.Amount, Math.Min(remainingAmount, availableBtc));
+					// Check BTC balance
+					decimal availableBtc = exchange.AvailableFunds.Crypto;
+					decimal sellableAmount = Math.Min(bid.Amount, Math.Min(remainingAmount, availableBtc));
 
                     if (sellableAmount <= 0)
                         continue;

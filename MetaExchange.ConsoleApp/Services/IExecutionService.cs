@@ -6,6 +6,6 @@ namespace MetaExchange.ConsoleApp.Services
 {
     public interface IExecutionService
     {
-        Task<ExecutionPlan> GetBestExecutionPlanAsync(List<Exchange> exchanges, string orderType, double amount);
+        Task<ExecutionPlan> GetBestExecutionPlanAsync(List<Exchange> exchanges, string orderType, decimal amount);
     }
 }

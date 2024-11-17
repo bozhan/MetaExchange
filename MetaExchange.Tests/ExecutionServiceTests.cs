@@ -41,7 +41,7 @@ namespace MetaExchange.Tests
 			};
 
 			string orderType = "Buy";
-			double amount = 7;
+			decimal amount = 7;
 
 			// Act
 			var plan = await _executionService.GetBestExecutionPlanAsync(exchanges, orderType, amount);
@@ -80,7 +80,7 @@ namespace MetaExchange.Tests
 			};
 
 			string orderType = "Sell";
-			double amount = 7;
+			decimal amount = 7;
 
 			// Act
 			var plan = await _executionService.GetBestExecutionPlanAsync(exchanges, orderType, amount);
@@ -119,7 +119,7 @@ namespace MetaExchange.Tests
 			};
 
 			string orderType = "Buy";
-			double amount = 7;
+			decimal amount = 7;
 
 			// Act
 			var plan = await _executionService.GetBestExecutionPlanAsync(exchanges, orderType, amount);
@@ -157,7 +157,7 @@ namespace MetaExchange.Tests
 			};
 
 			string orderType = "Sell";
-			double amount = 7;
+			decimal amount = 7;
 
 			// Act
 			var plan = await _executionService.GetBestExecutionPlanAsync(exchanges, orderType, amount);

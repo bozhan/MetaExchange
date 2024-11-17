@@ -18,9 +18,9 @@ namespace MetaExchange.ConsoleApp.Models
         public string? Kind { get; set; } // "Limit"
 
         [JsonPropertyName("Amount")]
-        public double Amount { get; set; }
+        public decimal Amount { get; set; }
 
         [JsonPropertyName("Price")]
-        public double Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

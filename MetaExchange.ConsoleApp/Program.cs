@@ -44,7 +44,7 @@ namespace MetaExchange.ConsoleApp
 				Console.WriteLine("Enter amount of BTC to transact:");
 				var amountInput = Console.ReadLine()?.Trim();
 
-				if (!double.TryParse(amountInput, out double amount) || amount <= 0)
+				if (!decimal.TryParse(amountInput, out decimal amount) || amount <= 0)
 				{
 					Console.WriteLine("Invalid amount entered.");
 					return;
@@ -62,7 +62,7 @@ namespace MetaExchange.ConsoleApp
 			}
 		}
 
-		static void DisplayExecutionPlan(ExecutionPlan plan, string orderType, double requestedAmount)
+		static void DisplayExecutionPlan(ExecutionPlan plan, string orderType, decimal requestedAmount)
 		{
 			if (plan.Orders.Count == 0)
 			{

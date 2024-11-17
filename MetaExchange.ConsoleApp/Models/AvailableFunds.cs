@@ -5,9 +5,9 @@ namespace MetaExchange.ConsoleApp.Models
     public class AvailableFunds
     {
         [JsonPropertyName("Crypto")]
-        public double Crypto { get; set; }
+        public decimal Crypto { get; set; }
 
         [JsonPropertyName("Euro")]
-        public double Euro { get; set; }
+        public decimal Euro { get; set; }
     }
 }

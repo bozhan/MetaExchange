@@ -12,10 +12,10 @@ namespace MetaExchange.ConsoleApp.Models
         public DateTime Time { get; set; }
 
         [JsonPropertyName("Type")]
-        public string Type { get; set; } // "Buy" or "Sell"
+        public string? Type { get; set; } // "Buy" or "Sell"
 
         [JsonPropertyName("Kind")]
-        public string Kind { get; set; } // "Limit"
+        public string? Kind { get; set; } // "Limit"
 
         [JsonPropertyName("Amount")]
         public double Amount { get; set; }

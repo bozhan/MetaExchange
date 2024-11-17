@@ -8,4 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MetaExchange.ConsoleApp
-build_property.ProjectDir = C:\Users\bivanov\Documents\Career\Applications\Active\STF-19200 Börse Stuttgart Digital - 2x .NET C# Fullstack Developer\exchanges_solution\MetaExchange\MetaExchange.ConsoleApp\
+build_property.ProjectDir = C:\src\MetaExchange\MetaExchange.ConsoleApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

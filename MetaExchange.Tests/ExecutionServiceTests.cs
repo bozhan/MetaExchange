@@ -27,7 +27,7 @@ namespace MetaExchange.Tests
 				new Exchange
 				{
 					Id = "exchange-01",
-					AvailableFunds = new AvailableFunds { Crypto = 10, Euro = 100000 },
+					AvailableFunds = new AvailableFunds { Crypto = 10, Euro = 352000 }, // Updated to 352,000 EUR
 					OrderBook = new OrderBook
 					{
 						Asks = new List<OrderWrapper>
@@ -36,7 +36,7 @@ namespace MetaExchange.Tests
 							new OrderWrapper { Order = new Order { Id = "ask-2", Type = "Sell", Amount = 5, Price = 51000 } }
 						},
 						Bids = new List<OrderWrapper>() // Not needed for Buy
-                    }
+					}
 				}
 			};
 

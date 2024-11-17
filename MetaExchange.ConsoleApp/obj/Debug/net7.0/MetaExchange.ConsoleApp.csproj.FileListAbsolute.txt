@@ -31,4 +31,14 @@ C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Microsoft.Extension
 C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Microsoft.Extensions.Logging.Console.dll
 C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\System.Diagnostics.DiagnosticSource.dll
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-01.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-02.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-03.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-04.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-05.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-06.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-07.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-08.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-09.json
+C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-10.json
 C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\MetaExchange.ConsoleApp.csproj.CopyComplete

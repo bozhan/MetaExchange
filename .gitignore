@@ -5,3 +5,4 @@ obj/
 *.sdf
 *.dbmdl
 .vscode/
+.vs/

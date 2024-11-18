@@ -32,6 +32,12 @@ namespace MetaExchange.WebApi.Controllers
 			_exchangesDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, configuration["ExchangesDirectory"] ?? "Exchanges");
 		}
 
+		/// <summary>
+		/// Gets the best execution plan for a given order type and amount.
+		/// </summary>
+		/// <param name="orderType">The type of order: Buy or Sell.</param>
+		/// <param name="amount">The amount of BTC to transact.</param>
+		/// <returns>An execution plan with the best possible orders.</returns>
 		[HttpGet("plan")]
 		public async Task<IActionResult> GetExecutionPlan([FromQuery] string orderType, [FromQuery] decimal amount)
 		{
@@ -56,6 +62,7 @@ namespace MetaExchange.WebApi.Controllers
 			catch (Exception ex)
 			{
 				_logger.LogError($"An error occurred: {ex.Message}");
+				_logger.LogError($"Stack Trace: {ex.StackTrace}");
 				return StatusCode(500, "An error occurred while processing your request.");
 			}
 		}

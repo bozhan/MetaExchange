@@ -30,11 +30,7 @@ namespace MetaExchange.WebApi
 
 			// Add Swagger services
 			builder.Services.AddEndpointsApiExplorer();
-			builder.Services.AddSwaggerGen(options =>
-			{
-				var xmlFilename = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
-				options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
-			});
+			builder.Services.AddSwaggerGen();
 
 			// Bind configuration
 			builder.Services.AddSingleton<IConfiguration>(builder.Configuration);

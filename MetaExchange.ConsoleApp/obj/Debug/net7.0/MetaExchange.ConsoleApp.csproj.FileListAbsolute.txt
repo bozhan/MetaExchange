@@ -41,4 +41,4 @@ C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\refint\MetaExchange
 C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\MetaExchange.ConsoleApp.pdb
 C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\MetaExchange.ConsoleApp.genruntimeconfig.cache
 C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\ref\MetaExchange.ConsoleApp.dll
-C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\MetaExch.60A72A70.Up2Date
+C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\MetaExchange.ConsoleApp.csproj.CopyComplete

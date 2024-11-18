@@ -48,6 +48,13 @@ namespace MetaExchange.WebApi.Controllers
 					return BadRequest("Invalid order type or amount.");
 				}
 
+				// Validate orderType
+				if (!orderType.Equals("Buy", StringComparison.OrdinalIgnoreCase) &&
+				    !orderType.Equals("Sell", StringComparison.OrdinalIgnoreCase))
+				{
+					return BadRequest("Order type must be either 'Buy' or 'Sell'.");
+				}
+
 				if (!Directory.Exists(_exchangesDirectory))
 				{
 					_logger.LogError($"Exchanges directory not found at path: {_exchangesDirectory}");

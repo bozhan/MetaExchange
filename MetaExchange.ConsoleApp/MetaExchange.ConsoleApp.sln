@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaExchange.ConsoleApp", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaExchange.Tests", "..\MetaExchange.Tests\MetaExchange.Tests.csproj", "{414F3873-0FB7-4C38-BBE2-C3222830108D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaExchange.WebApi", "..\MetaExchange.WebApi\MetaExchange.WebApi.csproj", "{1C8F0584-A8C6-4253-9763-FFDEAC8E10DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{414F3873-0FB7-4C38-BBE2-C3222830108D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{414F3873-0FB7-4C38-BBE2-C3222830108D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{414F3873-0FB7-4C38-BBE2-C3222830108D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C8F0584-A8C6-4253-9763-FFDEAC8E10DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C8F0584-A8C6-4253-9763-FFDEAC8E10DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C8F0584-A8C6-4253-9763-FFDEAC8E10DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C8F0584-A8C6-4253-9763-FFDEAC8E10DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

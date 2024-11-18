@@ -54,8 +54,8 @@ namespace MetaExchange.WebApi.Controllers
 					return StatusCode(500, "Exchanges directory not found.");
 				}
 
-				var exchanges = await _exchangeRepository.GetAllExchangesAsync(_exchangesDirectory);
-				var executionPlan = await _executionService.GetBestExecutionPlanAsync(exchanges, orderType, amount);
+				List<Exchange> exchanges = await _exchangeRepository.GetAllExchangesAsync(_exchangesDirectory);
+				ExecutionPlan executionPlan = await _executionService.GetBestExecutionPlanAsync(exchanges, orderType, amount);
 
 				return Ok(executionPlan);
 			}

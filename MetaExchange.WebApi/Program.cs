@@ -4,6 +4,9 @@ using Microsoft.Extensions.Hosting;
 using MetaExchange.ConsoleApp.Services;
 using Microsoft.Extensions.Configuration;
 using System.IO;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,10 +39,21 @@ if (app.Environment.IsDevelopment())
 }
 else
 {
-	// In production, you might want to serve Swagger UI at a different endpoint or disable it
 	app.UseSwagger();
 	app.UseSwaggerUI();
 }
+
+// Global Exception Handling
+app.UseExceptionHandler(a => a.Run(async context =>
+{
+	var feature = context.Features.Get<IExceptionHandlerPathFeature>();
+	var exception = feature?.Error;
+
+	var result = JsonSerializer.Serialize(new { error = "An unexpected error occurred." });
+	context.Response.ContentType = "application/json";
+	context.Response.StatusCode = 500;
+	await context.Response.WriteAsync(result);
+}));
 
 app.UseRouting();
 

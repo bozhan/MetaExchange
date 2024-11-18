@@ -41,4 +41,4 @@ C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-
 C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-08.json
 C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-09.json
 C:\src\MetaExchange\MetaExchange.ConsoleApp\bin\Debug\net7.0\Exchanges\exchange-10.json
-C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\MetaExchange.ConsoleApp.csproj.CopyComplete
+C:\src\MetaExchange\MetaExchange.ConsoleApp\obj\Debug\net7.0\MetaExch.60A72A70.Up2Date

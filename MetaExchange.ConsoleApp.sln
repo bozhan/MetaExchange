@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaExchange.ConsoleApp", "MetaExchange.ConsoleApp.csproj", "{A92D50C7-DC6D-497E-A99D-05C0D66D9D40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaExchange.ConsoleApp", "MetaExchange.ConsoleApp\MetaExchange.ConsoleApp.csproj", "{A92D50C7-DC6D-497E-A99D-05C0D66D9D40}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaExchange.Tests", "..\MetaExchange.Tests\MetaExchange.Tests.csproj", "{414F3873-0FB7-4C38-BBE2-C3222830108D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetaExchange.Tests", "MetaExchange.Tests\MetaExchange.Tests.csproj", "{414F3873-0FB7-4C38-BBE2-C3222830108D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaExchange.WebApi", "..\MetaExchange.WebApi\MetaExchange.WebApi.csproj", "{1C8F0584-A8C6-4253-9763-FFDEAC8E10DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaExchange.WebApi", "MetaExchange.WebApi\MetaExchange.WebApi.csproj", "{1C8F0584-A8C6-4253-9763-FFDEAC8E10DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

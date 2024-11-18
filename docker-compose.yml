@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  metaexchange-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - ExchangesDirectory=/app/Exchanges
+    volumes:
+      - ./MetaExchange.WebApi:/app
+      - /app/obj/
+      - /app/bin/
+      - /app/out/
